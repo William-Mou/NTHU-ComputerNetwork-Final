@@ -19,11 +19,11 @@ int main(int argc , char *argv[]) {
 	char serverAddressStr[ADDRESS_SIZE];
 	int serverPort;
     int firstFlag = 1;
-	if (argc == 2) {
+	if (argc == 3) {
 		strcpy(serverAddressStr, argv[1]);
-		// serverPort = atoi(argv[2]);
+		serverPort = atoi(argv[2]);
 	}
-	serverPort = 20110;
+	//serverPort = 20110;
 
 	// Set the server information
 	memset(&serverAddress, 0, sizeof(serverAddress));
